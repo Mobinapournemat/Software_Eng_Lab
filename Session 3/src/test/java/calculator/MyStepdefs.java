@@ -12,6 +12,7 @@ public class MyStepdefs {
     private int value2;
     private int result;
 
+
     @Before
     public void before() {
         calculator = new Calculator();
@@ -31,6 +32,17 @@ public class MyStepdefs {
 
     @Then("^I expect the result (\\d+)$")
     public void iExpectTheResult(int arg0) {
+        Assert.assertEquals(arg0, result);
+    }
+
+
+    @When("^I compute the square root of two numbers divided$")
+    public void iComputeTheSquareRootOfTwoNumbersDivided() {
+        result = calculator.compute(value1, value2);
+    }
+
+    @Then("^I expect the result to be (\\d+)$")
+    public void iExpectTheResultToBe(int arg0) {
         Assert.assertEquals(arg0, result);
     }
 }
