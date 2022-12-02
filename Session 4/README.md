@@ -1,3 +1,39 @@
+# Report
+1. 
+    First, we implement the computeArea function and we run the test and we encounter the following error:
+    ![image.png](screenshots/error1.png)
+    ![image.png](screenshots/error2.png)
+    Then, we implement the Rectangle class and the computeArea function and then run the test again:
+    ![image.png](screenshots/code1.png)
+    Then we run the test again and we encounter the following error (errors during run-time):
+    ![image.png](screenshots/error3.png)
+    Then we correct our implementation and run again:
+    ![image.png](screenshots/code2.png)
+    ![image.png](screenshots/success1.png)
+
+2. 
+    First, we implement the tests for getter and setter of the width and the height and we run the test and we encounter the following error:
+    ![image.png](screenshots/error4.png)
+    Then we implement the getter and setter and run the test again:
+    ![image.png](screenshots/code3.png)
+    ![image.png](screenshots/success2.png)
+
+3. 
+    First, we implement an interface called Shape that both the Rectangle and the Square classes implement:
+    ![image.png](screenshots/interface.png)
+    ![image.png](screenshots/rectangle.png)
+    Then we impelement a test for this Square class and fail:
+    ![image.png](screenshots/error5.png)
+
+    Then we create the Square class and run the test again:
+    ![image.png](screenshots/square.png)
+    ![image.png](screenshots/fail.png)
+    The test fails because of the run-time error. Now we correct the implementation and run the test again:
+    ![image.png](screenshots/code4.png)
+    ![image.png](screenshots/success3.png)
+
+    We also add the getter and setter for Square class and test them (please see the code in the repository).
+
 # Questions
 <div dir="rtl">
 <b> سوال اول</b>
