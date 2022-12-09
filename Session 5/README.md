@@ -31,3 +31,5 @@ Both design patterns which we used in this experiment are in the category of Cre
 ## Q3: 
 GOF are patterns i.e. proven design solutions to recurring problems. SOLID are principles and are not tied to any specific problem domain hence true in any scenario
 
+## Q4: 
+Singleton design pattern violates the Single Responsibility Principle since the objects control how they are created and manage their life-cycle. This clearly contradicts the Single Responsibility Principle which states that a class should have one and only one reason for change. In order to limit the ability of creating instances of a class, a better alternative is in leveraging the factory or builder design patterns and then encapsulating the object creation logic. Another problem with the Singleton design pattern is that you can't extend them easily. You would want to take advantage of the Decorator design pattern to change the behavior.
