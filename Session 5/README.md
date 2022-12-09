@@ -12,7 +12,8 @@ Then, we implement the Abstract Factory pattern and run the tests (All of them p
 ![](screenshots/japtreetest.png)
 
 # Prototype
-
+We implemented and tested the circle and shape example and ran the test to see if the cloning is working properly.
+![](screenshots/circleclone.png)
 # Builder
 
 # Questions
