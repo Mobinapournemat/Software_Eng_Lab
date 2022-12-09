@@ -3,9 +3,17 @@
 First, we implement the test for the Iranian/Japanese garden project: 
 ![](screenshots/testabs.png)
 
-Then, we implement the Abstract Factory pattern and run the tests: 
+Then, we implement the Abstract Factory pattern and run the tests (All of them passed): 
+![](screenshots/chenartest.png)
+![](screenshots/khatmitest.png)
+![](screenshots/irgardencreator.png)
+![](screenshots/japgardencreator.png)
+![](screenshots/japftest.png)
+![](screenshots/japtreetest.png)
 
+# Prototype
 
+# Builder
 
 # Questions
 
