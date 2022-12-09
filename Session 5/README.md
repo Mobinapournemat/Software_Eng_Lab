@@ -22,4 +22,12 @@ Then, we implement the Abstract Factory pattern and run the tests (All of them p
 
 2. Structural design patterns: Structural patterns form larger structures from individual parts, generally of different classes.Structural patterns vary a great deal depending on what sort of structure is being created for what purpose. Structural patterns are concerned with how classes and objects are composed to form larger structures. Structural class patterns use inheritance to compose interfaces or implementations. 
 
-4. Behavioral design patterns: Behavioral patterns describe interactions between objects and focus on how objects communicate with each other. They can reduce complex flow charts to mere interconnections between objects of various classes. Behavioral patterns are also used to make the algorithm that a class uses simply another parameter that is adjustable at runtime. Behavioral patterns are concerned with algorithms and the assignment of responsibilities between objects.
+3. Behavioral design patterns: Behavioral patterns describe interactions between objects and focus on how objects communicate with each other. They can reduce complex flow charts to mere interconnections between objects of various classes. Behavioral patterns are also used to make the algorithm that a class uses simply another parameter that is adjustable at runtime. Behavioral patterns are concerned with algorithms and the assignment of responsibilities between objects.
+
+
+## Q2:
+Both design patterns which we used in this experiment are in the category of Creational design patterns. Creational design patterns include factory method, abstract factory, builder, prototype, and singleton.
+
+## Q3: 
+GOF are patterns i.e. proven design solutions to recurring problems. SOLID are principles and are not tied to any specific problem domain hence true in any scenario
+
