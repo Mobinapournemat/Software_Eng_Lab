@@ -38,31 +38,27 @@ public class Parser {
                 currentAction = parseTable.getActionTable(parsStack.peek(), lookAhead);
                 Log.print(currentAction.toString());
 
-                switch (currentAction.action) {
-                    case shift:
-                        parsStack.push(currentAction.number);
-                        lookAhead = lexicalAnalyzer.getNextToken();
-
-                        break;
-                    case reduce:
-                        Rule rule = rules.get(currentAction.number);
-                        for (int i = 0; i < rule.RHS.size(); i++) {
-                            parsStack.pop();
-                        }
-
-                        Log.print(/*"state : " +*/ parsStack.peek() + "\t" + rule.LHS);
-                        parsStack.push(parseTable.getGotoTable(parsStack.peek(), rule.LHS));
-                        Log.print(/*"new State : " + */parsStack.peek() + "");
-                        try {
-                            codeGeneratorFacade.semanticFunction(rule.semanticAction, lookAhead);
-                        } catch (Exception e) {
-                            Log.print("Code Genetator Error");
-                        }
-                        break;
-                    case accept:
-                        finish = true;
-                        break;
+                if (currentAction.action == act.shift) {
+                    parsStack.push(currentAction.number);
+                    lookAhead = lexicalAnalyzer.getNextToken();
                 }
+                if (currentAction.action == act.reduce) {
+                    Rule rule = rules.get(currentAction.number);
+                    for (int i = 0; i < rule.RHS.size(); i++) {
+                        parsStack.pop();
+                    }
+
+                    Log.print(/*"state : " +*/ parsStack.peek() + "\t" + rule.LHS);
+                    parsStack.push(parseTable.getGotoTable(parsStack.peek(), rule.LHS));
+                    Log.print(/*"new State : " + */parsStack.peek() + "");
+                    try {
+                        codeGeneratorFacade.semanticFunction(rule.semanticAction, lookAhead);
+                    } catch (Exception e) {
+                        Log.print("Code Genetator Error");
+                    }
+                }
+                if (currentAction.action == act.accept)
+                        finish = true;
                 Log.print("");
             } catch (Exception ignored) {
                 ignored.printStackTrace();
