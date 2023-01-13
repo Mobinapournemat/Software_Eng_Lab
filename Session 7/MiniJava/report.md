@@ -1,3 +1,9 @@
+## List of refactoring commits:
+- Facade: [CodeGeneratorFacade](https://github.com/Mobinapournemat/Software_Eng_Lab/commit/ab65fd3aad780c90f0270bf75bc9fc163e8ddfa7), [MemoryFacade](https://github.com/Mobinapournemat/Software_Eng_Lab/commit/7c464d26c84b95ed322009f33330d229705f4aa2)
+- [Separate query from modifier](https://github.com/Mobinapournemat/Software_Eng_Lab/commit/8a5d62f067a35d28a1ab5564773e159c4d3b909a)
+- [Loose coupling](https://github.com/Mobinapournemat/Software_Eng_Lab/commit/aa55fffc1bedf087c2e786804920a847bdd4bb5d)
+- [Self Encapsulated Field](https://github.com/Mobinapournemat/Software_Eng_Lab/commit/f1b1552501c71eed6b3f739d48c5922c71b129ae)
+- [Remove Switch Statement](https://github.com/Mobinapournemat/Software_Eng_Lab/commit/234ec09804cad2b2b6c0ac4f54cbe9a1f272e717)
 ## Loose Coupling
 <div dir="rtl">
 Loose Coupling به نوعی معماری در توسعهٔ سیستم‌های نرم‌افزاری گفته می‌شود که در آن، کامپوننت‌ها یا بخش‌های مختلف اپلیکیشن تا حد ممکن مستقل از یکدیگر خواهند بود. به عبارت دیگر، این اصطلاح به میزان ارتباط مستقیم ماژول‌های مختلف اپلیکیشن با یکدیگر اطلاق می‌گردد.
