@@ -51,7 +51,8 @@ Loose Coupling به نوعی معماری در توسعهٔ سیستم‌های 
 ![](screesshots/encapsulation.png)
 
 <br/>
-# Questions
+
+## Questions
 <div dir="rtl">
 <b> سوال اول</b>
 
