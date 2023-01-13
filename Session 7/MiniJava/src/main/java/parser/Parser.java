@@ -11,9 +11,10 @@ import codeGenerator.CodeGenerator;
 import errorHandler.ErrorHandler;
 import scanner.lexicalAnalyzer;
 import scanner.token.Token;
+import java.util.List;
 
 public class Parser {
-    private ArrayList<Rule> rules;
+    List<Rule> rules;
     private Stack<Integer> parsStack;
     private ParseTable parseTable;
     private lexicalAnalyzer lexicalAnalyzer;
