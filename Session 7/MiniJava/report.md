@@ -15,7 +15,7 @@ Loose Coupling به نوعی معماری در توسعهٔ سیستم‌های 
 <br/>
 
 ![](screesshots/Facade.png)
-![](screenshots/memoryfacade.png)
+![](screesshots/memfacade.png)
 <br/>
 ## Remove switch statemnets
 <div dir="rtl">
